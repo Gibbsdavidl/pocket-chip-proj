@@ -15,7 +15,7 @@ findp' n x ps
   | otherwise = findp' n (x+2) ps
 
 findp:: Integer -> Integer
-findp n = findp' (n-5) 9 [3,5,7]
+findp n = findp' (n-4) 9 [3,5,7]
 
 main = do
   args <- getArgs
