@@ -1,9 +1,11 @@
 
--- problem 2
+-- problem 3
 
-fib a b c
-  | b > 4000000 = c
-  | mod b 2 == 0 = fib b (a+b) (c+b)
-  | otherwise = fib b (a+b) c
 
-main = putStrLn $ show $ fib 1 2 0
+
+
+s x =
+    | (isDiv x 600851475143) && (isPrime x) = x
+    | otherwise = s (x-2)
+
+main = putStrLn $ show $ s $ ceiling (600851475143/2)
